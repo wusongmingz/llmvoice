@@ -1,0 +1,72 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      // 'base': #d70010,
+      'base': #409eff,
+    ),
+  ),
+  $menu: (
+    'item-height': 50px,
+    'active-bg-color': var(--layout-bg-color),
+    'base-level-padding': 25px,
+    'level-padding': 10px,
+  ),
+  $card: (
+    'padding': 10px,
+  ),
+  $dropdown: (
+    'padding': 100px,
+  )
+);
+
+@use 'element-plus/theme-chalk/src/index.scss' as *;
+:root {
+  //项目背景色 最底层
+  --layout-bg-color: #ffffff;
+
+  //项目上方导航栏高度 -- 用户
+  --layout-topbar-height: 80px;
+  //项目上方导航栏背景色 -- 用户
+  --layout-topbar-bg: #f0f3f9;
+
+  //项目面包屑高度 -- 本项目未涉及
+  --layout-tabbar-height: 50px;
+  //项目面包屑背景色 -- 本项目未涉及
+  --layout-tabbar-bg-color: #edf1f4;
+
+  //项目菜单宽度
+  --layout-menu-width: 240px;
+  //项目菜单背景色
+  --layout-menu-bg-color: linear-gradient(to bottom, #f0f3f9 0%, #f0f3f9 100%);
+  //项目菜单边框背景色
+  // --layout-menu-border-color: #f0f3f9;
+  --layout-menu-border-color: transparent;
+  //项目子菜单边框背景色
+  --layout-menu-sub-bg-color: #f0f3f9;
+  //项目子菜单边框  ---   浮动 hover 背景色
+  --layout-menu-sub-hover-bg-color: #f0f3f9;
+  //项目菜单背景色
+  --layout-menu-item-bg-color: #f0f3f9;
+  //项目菜单背景色  ---   浮动 hover 背景色
+  --layout-menu-item-hover-bg-color: #d2d6da;
+  //项目菜单背景色  ---   选中 背景色
+  --el-menu-active-bg-color: #000000; //红色
+
+  //所有item 的背景色  ---   浮动 hover 背景色
+  --el-menu-hover-bg-color: #f0f3f9; //粉色
+
+  //Acard 背景色  ATable 的表头色
+  --layout-main-bg-color: #fff;
+  //ATable 的字体色
+  --layout-main-text-color: #7f7f7f;
+  //ADialog 的表头色 目前已注释
+  --layout-dialog-header-color: #f0f1f3;
+  //未用
+  --layout-table-row-bg: #f2f6fc;
+  //deep后  .el-table  斑马线色，需要手动deep
+  --table-row-striped: #f5f6f7;
+  //deep后  .el-table  表格 hover 色，需要手动deep
+  --table-row-bg-hover: #eceff6;
+  // select经过背景色
+  --el-fill-color-light: #edf1f4;
+}
